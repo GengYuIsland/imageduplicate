@@ -22,8 +22,7 @@ def compare_images(path_one, path_two) :
     if hash_one == hash_two:
         duplicateImagePool += (path_two,)
         duplicateImagePool = tuple( set(duplicateImagePool) )
-#!/usr/bin/env Python
-# coding=utf-8
+        
 #遍历项目文件树，找出所有图片路径
 for parent,dirnames,filenames in os.walk(filePath): 
     for filename in filenames:    
